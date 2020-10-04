@@ -1,0 +1,52 @@
+mat-toolbar {
+   width: 100%;
+   position: fixed;
+   display: flex;
+   justify-content: space-between;
+   background-color: #c2c2c2;
+
+   .logo__container {
+      @media (max-width: 767px) {
+         width: 100%;
+      }
+      a {
+         padding-left: 15px;
+         list-style-type: none;
+         text-decoration: none;
+         color: #ffffff;
+      }
+   }
+
+   .navigation__container {
+      width: 90%;
+      display: flex;
+      justify-content: flex-end;
+      @media (max-width: 767px) {
+         display: none;
+      }
+      .navigation-items {
+         display: flex;
+         padding: 0;
+         margin: 0;
+         list-style-type: none;
+         li {
+            margin: 0px 15px;
+            a {
+               text-decoration: none;
+               color: #ffffff;
+            }
+            a:hover, a:active{
+               color: lightgray;
+            }
+         }
+      }
+   }
+}
+
+// MEDIAQUERIES
+
+@media(max-width: 767px){
+   .navigation-items {
+      display: none;
+   }
+}
